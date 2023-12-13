@@ -3,7 +3,7 @@ package org.lessons.java.valutazioni;
 
 public class Main {
     public static void main(String[] args) {
-        Student studente = new Student(32429, 25, 1.3);
+        Student studente = new Student();
         studente.isStudentFailed();
         if (!studente.isStudentFailed()) {
             System.out.println("Promosso");

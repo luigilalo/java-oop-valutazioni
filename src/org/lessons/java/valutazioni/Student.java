@@ -5,24 +5,25 @@ import java.util.Scanner;
 
 public class Student {
     // ATTRIBUTI
-    private int studentID;
+    private int studentId;
     private int absencePercentage;
     private double averageGrade;
 
     // COSTRUTTORE
-    public Student(int studentID) {
-        this.studentID = studentID;
-        this.absencePercentage = ;
-        this.averageGrade = averageGrade;
+    public Student() {
+        Random random = new Random();
+        this.studentId = random.nextInt(25490);
+        this.absencePercentage = random.nextInt(101);
+        this.averageGrade = random.nextInt(6);
     }
 
     // GETTERS AND SETTERS
-    public int getStudentID() {
-        return studentID;
+    public int getStudentId() {
+        return studentId;
     }
 
-    public void setStudentID(int studentID) {
-        this.studentID = studentID;
+    public void setStudentId(int studentId) {
+        this.studentId = studentId;
     }
 
     public int getAbsencePercentage() {
@@ -60,14 +61,10 @@ public class Student {
         return failed;
     }
 
-    public void studentGenerator(int studentID) {
-        Random
-    }
-
     @Override
     public String toString() {
         return "Student{" +
-                "studentID=" + studentID +
+                "studentID=" + studentId +
                 ", absencePercentage=" + absencePercentage +
                 ", averageGrade=" + averageGrade +
                 '}';

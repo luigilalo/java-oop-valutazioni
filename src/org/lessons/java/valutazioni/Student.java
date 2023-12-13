@@ -1,5 +1,8 @@
 package org.lessons.java.valutazioni;
 
+import java.util.Random;
+import java.util.Scanner;
+
 public class Student {
     // ATTRIBUTI
     private int studentID;
@@ -7,9 +10,9 @@ public class Student {
     private double averageGrade;
 
     // COSTRUTTORE
-    public Student(int studentID, int absencePercentage, double averageGrade) {
+    public Student(int studentID) {
         this.studentID = studentID;
-        this.absencePercentage = absencePercentage;
+        this.absencePercentage = ;
         this.averageGrade = averageGrade;
     }
 
@@ -55,6 +58,19 @@ public class Student {
             }
         }
         return failed;
+    }
+
+    public void studentGenerator(int studentID) {
+        Random
+    }
+
+    @Override
+    public String toString() {
+        return "Student{" +
+                "studentID=" + studentID +
+                ", absencePercentage=" + absencePercentage +
+                ", averageGrade=" + averageGrade +
+                '}';
     }
 }
 

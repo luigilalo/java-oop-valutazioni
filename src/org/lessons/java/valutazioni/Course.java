@@ -8,7 +8,7 @@ public class Course {
     private ArrayList<Student> studentArrayList;
 
     // COSTRUTTORE
-    public Course(ArrayList<Student> studentArrayList) {
+    public Course() {
         this.studentArrayList = studentArrayList;
     }
 
